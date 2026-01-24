@@ -1,0 +1,7 @@
+set go -=T
+set go +=e
+set go +=r
+set go +=d
+"set guifont=终端更纱黑体-简\Nerd\ 14
+set guifont=Monospace\ 15
+set lines=30 columns=120

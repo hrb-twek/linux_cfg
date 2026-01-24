@@ -1,0 +1,7 @@
+set go -=T
+set go +=e
+set go +=r
+set go +=d
+set guifont=等距更纱黑体_SC:h13
+set visualbell
+set lines=30 columns=120
