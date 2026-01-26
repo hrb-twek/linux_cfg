@@ -7,10 +7,7 @@ set ai
 set cin
 set cul
 set cuc
-set ts=4
 set smartindent
-set expandtab
-set shiftwidth=4
 set autochdir
 set autoread
 set hls
@@ -24,4 +21,12 @@ set suffixesadd+=.h
 set ff=dos
 set history=200
 syntax on
+
+filetype plugin indent on
+set expandtab
+set tabstop=4
+set shiftwidth=4
+autocmd FileType python,verilog,javascript,html,css setlocal expandtab shiftwidth=4 tabstop=4
+autocmd FileType make,automake setlocal noexpandtab
+
 colorscheme desert
