@@ -29,4 +29,6 @@ set shiftwidth=4
 autocmd FileType python,verilog,javascript,html,css setlocal expandtab shiftwidth=4 tabstop=4
 autocmd FileType make,automake setlocal noexpandtab
 
+set tags=./tags;,tags
+
 colorscheme desert
