@@ -22,6 +22,8 @@ set ff=dos
 set history=200
 syntax on
 
+au! BufNewFile,BufRead *.xdc setf tcl
+
 filetype plugin indent on
 set expandtab
 set tabstop=4
