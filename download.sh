@@ -4,6 +4,8 @@ cp -f vim/lnx/_gvimrc ~/.gvimrc
 # cp -f _curlrc ~/.curlrc
 # cp -f _gitconfig ~/.gitconfig
 sudo cp -f udev_rules/*.* /etc/udev/rules.d/
+cp -f fonts.conf ~/.config/fontconfig/fonts.conf
+cp -f SarasaMonoSC-Regular.ttf ~/.local/share/fonts/SarasaMonoSC-Regular.ttf
 
 mkdir -p ~/bin
 cp -f bin/*.* ~/bin/
