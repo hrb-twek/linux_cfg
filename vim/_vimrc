@@ -1,8 +1,6 @@
 set nu
 set textwidth=200
 set nobackup
-set undodir=~/.vim/undo//
-set undofile
 set ai
 set cin
 set cul
@@ -22,15 +20,25 @@ set ff=dos
 set history=200
 syntax on
 
-au! BufNewFile,BufRead *.xdc setf tcl
 
+au! BufNewFile,BufRead *.xdc setf tcl
 filetype plugin indent on
+
 set expandtab
 set tabstop=4
 set shiftwidth=4
+
 autocmd FileType python,verilog,javascript,html,css setlocal expandtab shiftwidth=4 tabstop=4
 autocmd FileType make,automake setlocal noexpandtab
 
 set tags=./tags;,tags
+
+if has('nvim')
+    set undodir=~/.nvim/undo//
+else
+    set undodir=~/.vim/undo//
+endif
+
+set undofile
 
 colorscheme desert
