@@ -1,3 +1,14 @@
+if has('nvim')
+    set undodir=~/.nvim/undo//
+else
+    call plug#begin()
+    Plug 'vhda/verilog_systemverilog.vim'
+    call plug#end()
+    set undodir=~/.vim/undo//
+endif
+
+set undofile
+
 set nu
 set textwidth=200
 set nobackup
@@ -5,7 +16,7 @@ set ai
 set cin
 set cul
 set cuc
-set smartindent
+set autoindent
 set autochdir
 set autoread
 set hls
@@ -31,15 +42,8 @@ set shiftwidth=4
 
 autocmd FileType python,verilog,javascript,html,css setlocal expandtab shiftwidth=4 tabstop=4
 autocmd FileType make,automake setlocal noexpandtab
+let g:verilog_disable_indent_lst = 'module,eos'
 
 set tags=./tags;,tags
-
-if has('nvim')
-    set undodir=~/.nvim/undo//
-else
-    set undodir=~/.vim/undo//
-endif
-
-set undofile
 
 colorscheme desert

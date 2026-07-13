@@ -1,3 +1,3 @@
-sudo efibootmgr -n 0002
+sudo cp -f ~/bin/grubenv_win /boot/grub/grubenv
 sudo reboot
 
