@@ -1,0 +1,1 @@
+powershell -file d:/exe/bin/nvim_launch.ps1 [file name] [line number]
