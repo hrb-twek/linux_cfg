@@ -4,7 +4,7 @@ set mouse=a
 " Set Editor Font
 if exists(':GuiFont')
     " Use GuiFont! to ignore font errors
-    GuiFont 等距更纱黑体 SC:h13
+    GuiFont! 等距更纱黑体 SC:h13
 endif
 
 " Disable GUI Tabline
